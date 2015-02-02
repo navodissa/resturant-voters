@@ -246,7 +246,7 @@ def admin():
     #            mills = mills.replace("[","")
     #            mills = mills.replace("]","")
         #            return render_template("admin.html", form=form, count=count, abc = mills)
-                send_email("[ukst foods] %s is chosen" % abc,
+                send_email("[Resturant Voters] %s is chosen" % abc,
                             'navomails@gmail.com',
                             mills,
                             render_template("mail_body_all.txt", rest=abc, count=count, name=name))

@@ -13,7 +13,7 @@ So we have selected {{ rest }} since {{ rest }} has got the most votes.
 Thank you for your vote.
 
 Please visit the below URL to view menu of {{ rest }}.
-http://localhost:5000/resturant
+http://resturant-voters.herokuapp.com/resturant
 
 Regards,
 
