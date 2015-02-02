@@ -31,7 +31,7 @@ class SignupForm(Form):
     if user:
       self.email.errors.append("That email is already taken")
       return False
-    elif not re.match("^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@gmail.com",e_mail):
+    elif not re.match("^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@virtusa.com",e_mail):
       self.email.errors.append("Please enter a valid Virtusa mail address")
       return False
     else:
