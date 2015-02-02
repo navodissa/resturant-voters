@@ -17,8 +17,8 @@ header {
 }
 
 header h1.logo {
-  margin: 0;
-  font-size: 1.7em;
+  margin-top: 8px;
+  font-size: 1.1em;
   color: #fff;
   text-transform: uppercase;
   float: left;
@@ -33,7 +33,7 @@ header h1.logo:hover {
 
 .container {
   width: 940px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 div.jumbo {
