@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="jumbo">
+  <form action="" method=post>
+  <h3>Select Menu</h3>
+
+  <h4 align="center"><font color="red">{{ error }}</font></h4>
+  <h4 align="center"><font color="red">{{ error2 }}</font></h4>
+  <br>
+  <h4 align="center">Selected Resturant:</h4>
+  <h4 align="center">{{ b }}<h4>
+  <h4 align="center">Select Menu:</h4>
+  <h4 align="center">{{ form.sel_menu }}</h4>
+  <h4 align="center">{{ form.submit }}</h4>
+  </form>
+</div>
+  {% endblock %}

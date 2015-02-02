@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <body>
+    <div class="container">
+      <div class="header">
+  <h3 class="text-muted">Voted Resturant Details</h3>
+      </div>
+      <hr/>
+      <h3>Delete Data entered</h3>
+      <table class="table">
+  <tbody>
+    <tr>
+      <td>Resturant you have voted</td><td>:</td>
+      <td>{{ delname }}</td>
+    </tr>
+
+    <tr>
+      <td>Status</td><td>:</td>
+      <td>{{ deletename }}</td>
+    </tr>
+
+
+  </tbody>
+      </table>
+
+      <div class="form-group">
+        <div class="col-lg-offset-2 col-lg-2">
+          <form action="" method="post">
+          <input type="submit" class="btn btn-primary" value="Delete">
+        </form>
+        </div>
+        {% endblock %}
+  </body>
+</html>

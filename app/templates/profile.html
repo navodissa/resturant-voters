@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <form action="" method=post>
+    <h2>Vote<h2>
+    <h3>Hi {{ name }},
+    <br>{{ error }}
+    <h3 align="center">{{ output }}</h3>
+    <h4 align="center">If you want to delete the vote you have already given, please <a href = "delete">click me.</a></h4>
+    <h4 align="center">{{ form.resturant }} </h4>
+    <div>
+      <h4 align="center">{{ form.submit }}</h4>
+    </div>
+    </form>
+
+{% endblock %}

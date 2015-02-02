@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <body>
+    <div class="container">
+      <div class="header">
+  <h3 class="text-muted">Order Details</h3>
+      </div>
+      <hr/>
+      <h3>Order list entered</h3>
+      {{ uname }}
+
+      <div class="form-group">
+        <div align="center" class="col-lg-offset-2 col-lg-2">
+          <form action="" method="post">
+          <input type="submit" class="btn btn-primary" value="Refresh">
+        </form>
+        </div>
+        {% endblock %}
+  </body>
+</html>

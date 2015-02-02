@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Food Ordering</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  </head>
+  <body>
+
+  <header>
+    <div class="container">
+
+        <a href="/">
+          <h1 class="logo">UKST Foods</h1>
+        </a>
+
+
+      <nav>
+        <ul class="menu">
+          <li><a href="{{ url_for('home') }}">Home</a></li>
+          <li><a href="{{ url_for('contact') }}">Contact</a></li>
+          <li><a href="{{ url_for('resturant') }}">Menu</a></li>
+          {% if 'email' in session %}
+          <li><a href="{{ url_for('profile') }}">Vote</a></li>
+          <li>{{ name }} </li>
+          <li><a href="{{ url_for('signout') }}">Sign Out</a></li>
+          {% else %}
+          <li><a href="{{ url_for('signup') }}">Sign Up</a></li>
+          <li><a href="{{ url_for('signin') }}">Sign In</a></li>
+          {% endif %}
+          <li>{Beta Version}</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
+    <div align="center">
+    <footer align="center">
+     <font size="1" color="grey">navodissa</a> &copy2015 Powered by <a href="https://www.heroku.com/">Heroku</a></font>
+   </footer>
+ </div>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+Dear {{ name }},
+
+You have selected {{ menu }} from {{ b }}. Hope you have a nice supper.
+
+Regards,
+
+The Food Order admin

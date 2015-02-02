@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block content %}
+<script type="text/javascript">
+var image1 = new Image()
+image1.src = "{{ url_for('static', filename = 'img/emily-browning-9287.jpg') }}"
+var image2 = new Image()
+image2.src = "{{ url_for('static', filename = 'img/Emily-Browning-14.jpg') }}"
+</script>
+  <div class="jumbo">
+    <h2>Welcome to Food Ordering System<h2>
+    <h3>This is the home page for the UK Sales Tools Fast Food Ordering System<h3>
+      <p><img src="{{ url_for('static', filename = 'img/emily-browning-9287.jpg') }}" width="500" height="300" name="slide" /></p>
+    <script type="text/javascript">
+        var step=1;
+        function slideit()
+        {
+            document.images.slide.src = eval("image"+step+".src");
+            if(step<2)
+                step++;
+            else
+                step=1;
+            setTimeout("slideit()",2500);
+        }
+        slideit();
+    </script>
+  </div>
+{% endblock %}

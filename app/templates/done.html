@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="container">
+      <div class="header">
+  <h3 class="text-muted">Voted Resturant Details</h3>
+      </div>
+      <hr/>
+      <h3>You have a great taste!!!</h3>
+      <table class="table">
+  <tbody>
+    <tr>
+          <td>Name</td>
+      <td>{{ data.name }}</td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td>{{ data.email }}</td>
+    </tr>
+    <tr>
+      <td>Resturant</td>
+      <td>{{ data.resturant }}</td>
+    </tr>
+
+    <tr>
+    <td></td>
+    </tr>
+
+    <tr>
+    <td><b>Current voting status :-</b></td>
+    </tr>
+
+    <tr>
+    <td></td>
+    </tr>
+
+    <tr>
+      <td>McDonald Voters:</td>
+      <td>{{ count.mc }}</td>
+    </tr>
+
+    <tr>
+      <td>Pizza Hut Voters:</td>
+      <td>{{ count.pizza }}</td>
+    </tr>
+
+    <tr>
+      <td>Great Wall Voters:</td>
+      <td>{{ count.great }}</td>
+    </tr>
+
+    <tr>
+      <td>DineMore Voters:</td>
+      <td>{{ count.dine }}</td>
+    </tr>
+
+    <tr>
+      <td>Steam Boat Voters:</td>
+      <td>{{ count.steam }}</td>
+    </tr>
+
+    <tr>
+      <td>Chinese Dragon Voters:</td>
+      <td>{{ count.dragon }}</td>
+    </tr>
+
+  </tbody>
+      </table>
+
+
+<!--      <div class="form-group">
+        <div class="col-lg-offset-2 col-lg-2">
+          <input type="submit" class="btn btn-primary" value="Delete">
+        </div>
+      </div>
+-->
+      <br>
+      If you want to delete the selected choice please <a href = "delete">CLICK ME</a>
+      <br>
+      <br><b>System will automatically send you a mail containing the voting results once everyone is done voting.</b></br>
+      <br>Thank you for your vote.
+      {% endblock %}
+  </body>
+</html>

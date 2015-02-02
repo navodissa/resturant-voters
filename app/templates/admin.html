@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+<form action="" method=post>
+  <h3>Select Resturant</h3>
+
+  <br>Select Resturant</br>
+  {{ form.selectedRes }}
+
+    <table class="table">
+      <tbody>
+        <tr>
+          <td>McDonald Voters:</td>
+          <td>{{ count.mc }}</td>
+        </tr>
+
+        <tr>
+          <td>Pizza Hut Voters:</td>
+          <td>{{ count.pizza }}</td>
+        </tr>
+
+        <tr>
+          <td>Great Wall Voters:</td>
+          <td>{{ count.great }}</td>
+        </tr>
+
+        <tr>
+          <td>DineMore Voters:</td>
+          <td>{{ count.dine }}</td>
+        </tr>
+
+        <tr>
+          <td>Steam Boat Voters:</td>
+          <td>{{ count.steam }}</td>
+        </tr>
+
+        <tr>
+          <td>Chinese Dragon Voters:</td>
+          <td>{{ count.dragon }}</td>
+        </tr>
+
+      </tbody>
+    </table>
+    {{ form.user_email }}
+    {{ abc }}
+  {{ form.submit }}
+    </form>
+
+{% endblock %}
