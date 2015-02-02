@@ -146,7 +146,7 @@ class Tempsel_resturant(db.Model):
 
     def __init__(self, name, email, resturant):
         self.name = name
-        self.email = [email]
+        self.email = email
         self.resturant = resturant
 
     def __repr__(self):
