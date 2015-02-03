@@ -1,3 +1,4 @@
+#!flask/bin/python3
 from app import app
 from flask import render_template, request, flash, session, url_for, redirect
 from app.forms import ContactForm, SignupForm, SigninForm, ResturantForm, OrderForm, AdminForm

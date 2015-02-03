@@ -1,3 +1,4 @@
+#!flask/bin/python3
 from flask.ext.sqlalchemy import SQLAlchemy
 from werkzeug import generate_password_hash, check_password_hash
 from app import db

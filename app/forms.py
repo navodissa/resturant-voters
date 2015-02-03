@@ -1,3 +1,4 @@
+#!flask/bin/python3
 from flask.ext.wtf import Form
 from wtforms import TextField, TextAreaField, RadioField, SubmitField, validators, ValidationError, PasswordField, SelectField, StringField
 from app.models import db, User, sel_resturant, Resturant, Menu, SelectResturant
